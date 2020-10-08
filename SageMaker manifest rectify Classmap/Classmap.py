@@ -5,8 +5,6 @@ import copy
 def read_manifest_file(file_path):
     with open(file_path, 'r') as f:
         output = [json.loads(line.strip()) for line in f.readlines()]
-        for line in f.readlines():
-            print(line)
         return output
 
 manifest_file_name = 

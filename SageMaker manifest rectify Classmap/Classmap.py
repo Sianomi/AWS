@@ -10,7 +10,7 @@ def read_manifest_file(file_path):
 manifest_file_name = 
 
 correct_classmap =
-correct_classmap_reverse = {v: k for k, v in correct_classmap.items()}
+correct_classmap_reverse = {v: int(k) for k, v in correct_classmap.items()}
 
 manifest_list = read_manifest_file(".\\"+manifest_file_name)
 new_manifest_list = []
